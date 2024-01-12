@@ -5,7 +5,7 @@ import { useQuiz } from "../../../context/QuizContext"
 
 const Category = () => {
 
-  const {handleIdQuestions} = useQuiz()
+  const {handleTypeQuestions} = useQuiz()
 
   return (
     <main className="page-category">
@@ -13,10 +13,10 @@ const Category = () => {
       <p>As perguntas serão referentes a uma dessas tecnologias</p>
       <div className="categories">
       <Link className="link" to="/questions"
-      onClick={()=>handleIdQuestions("1")}
+      onClick={()=>handleTypeQuestions("react")}
       >React</Link>
       <Link className="link" to="/questions"
-      onClick={()=>handleIdQuestions("2")}
+      onClick={()=>handleTypeQuestions("node")}
       >NodeJS</Link>
       </div>
       <img src={img} alt="imagem referente as categorias" />

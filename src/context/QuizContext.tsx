@@ -10,18 +10,11 @@ type ProviderProps = {
 
 export const QuizProvider = ({children}:ProviderProps) => {
 
-  const [idQuestions,setIdQuestions] = useState("")
   const [qtdHits,setQtdHits] = useState(0)
-
-  const handleIdQuestions = (value:string) => {
-    setIdQuestions(value)
-  }
   
 
   return (
     <QuizContext.Provider value={{
-      idQuestions,
-      handleIdQuestions,
       qtdHits,
       setQtdHits
     }}>
