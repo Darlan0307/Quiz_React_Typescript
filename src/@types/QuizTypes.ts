@@ -3,5 +3,11 @@ export type QuizTypes = {
   setQtdHits: (value:number)=>void,
 }
 
+export type objQuestions = {
+  pergunta:string,
+  alternativas:string[],
+  respostaCorreta: number
+}
+
 
 
