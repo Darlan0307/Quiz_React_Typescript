@@ -38,25 +38,23 @@
       cursor: pointer;
       border-radius: 20px;
       transition: all .6s;
+      text-align: center;
 
-      &:hover{
-        background-color: lightgreen;
-        color: #242424;
+      @media (min-width:1000px){
+        &:hover{
+          background-color: lightgreen;
+          color: #242424;
+        }
       }
+    
     }
 
     .correct{
       background-color: lightgreen;
       color: #242424;
       font-weight: bold;
-
     }
 
-    .incorrect{
-      background-color: lightcoral;
-      color: #242424;
-      font-weight: bold;
-    }
   }
 
   .btn-next-question{

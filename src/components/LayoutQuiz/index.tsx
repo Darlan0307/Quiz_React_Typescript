@@ -15,6 +15,7 @@ const LayoutQuiz = ({children}:LayoutProps) => {
       justifyContent:"center",
       alignItems:"center",
       margin:"2em auto",
+      marginBottom:"4em",
       backgroundColor:"#333",
       padding:"20px 10px",
       borderRadius:"20px"
