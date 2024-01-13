@@ -7,7 +7,7 @@ function App() {
 
   return (
     <QuizProvider>
-      <ToastContainer autoClose={2500} position={toast.POSITION.BOTTOM_LEFT}/>
+      <ToastContainer autoClose={1000} position={toast.POSITION.BOTTOM_LEFT}/>
       <AppRouter/>
     </QuizProvider>
   )

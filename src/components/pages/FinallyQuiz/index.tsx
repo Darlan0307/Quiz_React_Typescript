@@ -13,7 +13,7 @@ const FinallyQuiz = () => {
       <p>
         <span>Você acertou</span>
         {qtdHits}
-        <span>de</span>
+        <span>de</span> <br />
         {qtdQuestions}
         <span>perguntas.</span>
       </p>

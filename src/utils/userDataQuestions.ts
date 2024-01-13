@@ -43,11 +43,11 @@ export const userDataQuestions = (data:objQuestions[]) => {
       if(index == alternativeCorrect){
         setQtdHits(qtdHits + 1)
   
-        if(qtdHits >= 0 ){
+        if((qtdHits + 1) == 1 ){
           toast.success("Nossa você é muito bom")  
-        }else if(qtdHits >= 1){
+        }else if((qtdHits + 1) == 2){
           toast.success("parabéns por mais um acerto")
-        }else if(qtdHits  >= 2){
+        }else if((qtdHits + 1) >= 3){
           toast.success("Boa continue assim!")
         }
       }else{
