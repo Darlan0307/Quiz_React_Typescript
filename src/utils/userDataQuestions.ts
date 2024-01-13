@@ -14,10 +14,14 @@ export const userDataQuestions = (data:objQuestions[]) => {
   const alternativeCorrect = data[indexCurrent].respostaCorreta
 
   const nextQuestion = () => {
-    setIndexCurrent((prevIndex)=> prevIndex +1 )
-    setCorrectAlternative(null)
-    setIsQuestionVerify(false)
-    window.scrollTo(0,0)
+    if(isQuestionVerify){
+      setIndexCurrent((prevIndex)=> prevIndex +1 )
+      setCorrectAlternative(null)
+      setIsQuestionVerify(false)
+      window.scrollTo(0,0)
+    }else{
+      toast.warn('Escolha uma alternativa.')
+    }
   }
 
   const verifyAlternative = (index:number) => {

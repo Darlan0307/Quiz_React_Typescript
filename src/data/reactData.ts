@@ -21,12 +21,12 @@ export const reactData = [
     respostaCorreta: 0,
   },
   {
-    pergunta: "Para que serve o React? dsadsa dasdas das",
+    pergunta: "Quais são as funcionalidades mais importantes da React?",
     alternativas: [
-      "Para criar interfaces de usuário complexas e responsivas.",
-      "Para criar aplicativos web dinâmicos e escaláveis", 
-      "Para criar aplicativos móveis nativos",
-      "Para criar jogos 3D"],
+      "Componentes, renderização virtual e estado",
+      "Roteamento, estado e validação", 
+      "Componentes, roteamento e validação",
+      " Renderização virtual, estado e validação"],
     respostaCorreta: 0,
   },
   
