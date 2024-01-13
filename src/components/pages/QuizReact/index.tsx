@@ -2,26 +2,12 @@ import LayoutQuiz from '../../LayoutQuiz'
 import './styles.scss'
 import { reactData } from '../../../data/reactData'
 import { userDataQuestions } from '../../../utils/userDataQuestions'
-import { useState } from 'react'
 
 const QuizReact = () => {
 
-  const [correctAlternative,setCorrectAlternative] = useState<number | null>(null)
 
-  const {questionCurrent,indexCurrent,nextQuestion,qtdQuestions} = userDataQuestions(reactData)
+  const {questionCurrent,indexCurrent,nextQuestion,qtdQuestions,correctAlternative,verifyAlternative} = userDataQuestions(reactData)
 
-  const alternativeCorrect = questionCurrent.respostaCorreta
-
-
-  const verifyAlternative = (index:number) => {
-    if(index == alternativeCorrect){
-      alert("acertou")
-    }else{
-      alert("errou")
-    }
-
-    setCorrectAlternative(alternativeCorrect)
-  }
 
   return (
     <LayoutQuiz>
