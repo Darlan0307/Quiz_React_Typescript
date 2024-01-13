@@ -1,0 +1,40 @@
+.page-final{
+  padding: 1.5em 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  h2,p{
+    text-align: center;
+  }
+
+  h2{
+    color: #eaeaea;
+  }
+
+  p{
+    color: #a84ae6;
+    font-size: 1.1em;
+    span{
+      padding:0px 10px ;
+    }
+  }
+
+  .link{
+    background-color: #a84ae6;
+    border: none;
+    font-size: 20px;
+    color: #eaeaea;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  img{
+    width: 90%;
+    max-width: 350px;
+  }
+}

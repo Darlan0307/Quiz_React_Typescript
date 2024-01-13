@@ -6,7 +6,7 @@ import { userDataQuestions } from '../../../utils/userDataQuestions'
 const QuizReact = () => {
 
 
-  const {questionCurrent,indexCurrent,nextQuestion,qtdQuestions,correctAlternative,verifyAlternative} = userDataQuestions(reactData)
+  const {questionCurrent,indexCurrent,nextQuestion,qtdQuestions,correctAlternative,verifyAlternative,concludeQuiz} = userDataQuestions(reactData)
 
 
   return (
@@ -29,7 +29,7 @@ const QuizReact = () => {
         {indexCurrent + 1 == qtdQuestions ? (
           <button 
           className='btn-next-question'
-          
+          onClick={concludeQuiz}
           >Concluir</button>
         ):(
           <button 
