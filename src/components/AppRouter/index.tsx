@@ -6,18 +6,13 @@ import FinallyQuiz from "../pages/FinallyQuiz"
 import QuizNode from "../pages/Quizzes/QuizNode"
 import QuizHtml from "../pages/Quizzes/QuizHtml"
 import QuizCss from "../pages/Quizzes/QuizCss"
+import Header from "../header"
 
 const AppRouter = () => {
   return (
     <>
-      <h1
-      style={{
-        color:"#eaeaea",
-        textAlign:"center",
-        marginTop: "1em"
-      }}
-      >Quiz de Programação</h1>
       <BrowserRouter>
+        <Header/>
         <Routes>
           <Route path="/" element={<StartQuiz/>} />
           <Route path="/category" element={<Category/>} />
