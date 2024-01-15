@@ -2,11 +2,16 @@ import LayoutQuiz from '../../../LayoutQuiz'
 import '../styles.scss'
 import { htmlData } from '../../../../data/htmlData'
 import { userDataQuestions } from '../../../../utils/userDataQuestions'
+import { useEffect } from 'react'
 
 const QuizHtml = () => {
 
 
   const {questionCurrent,indexCurrent,nextQuestion,qtdQuestions,correctAlternative,verifyAlternative,concludeQuiz} = userDataQuestions(htmlData)
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
 
   return (
