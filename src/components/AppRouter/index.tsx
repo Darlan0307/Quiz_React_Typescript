@@ -4,6 +4,8 @@ import Category from "../pages/Category"
 import QuizReact from "../pages/Quizzes/QuizReact"
 import FinallyQuiz from "../pages/FinallyQuiz"
 import QuizNode from "../pages/Quizzes/QuizNode"
+import QuizHtml from "../pages/Quizzes/QuizHtml"
+import QuizCss from "../pages/Quizzes/QuizCss"
 
 const AppRouter = () => {
   return (
@@ -22,6 +24,8 @@ const AppRouter = () => {
 
           <Route path="/category/react" element={<QuizReact/>} />
           <Route path="/category/nodejs" element={<QuizNode/>} />
+          <Route path="/category/html" element={<QuizHtml/>} />
+          <Route path="/category/css" element={<QuizCss/>} />
 
           <Route path="/congratulations" element={<FinallyQuiz/>} />
         </Routes>

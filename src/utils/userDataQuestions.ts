@@ -51,7 +51,7 @@ export const userDataQuestions = (data:objQuestions[]) => {
           toast.success("Boa continue assim!")
         }
       }else{
-        toast.error("Não foi dessa vez ;-;")
+        toast.error("Não foi dessa vez 😭")
       }
   
       setCorrectAlternative(alternativeCorrect)

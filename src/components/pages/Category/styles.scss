@@ -34,8 +34,17 @@
       font-weight: bold;
       padding: 10px 20px;
       border-radius: 15px;
+      width: 140px;
       cursor: pointer;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .5em;
+      justify-content: center;
+
+      svg{
+        font-size: 30px;
+      }
     }
   }
 
