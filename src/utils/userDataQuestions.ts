@@ -55,6 +55,7 @@ export const userDataQuestions = (data:objQuestions[]) => {
       }
   
       setCorrectAlternative(alternativeCorrect)
+      window.location.href = `#${alternativeCorrect}`
     }else{
       if((indexCurrent + 1) != data.length){
         toast.warn('Vá para a próxima pergunta')

@@ -1,7 +1,7 @@
-import LayoutQuiz from '../../LayoutQuiz'
-import './styles.scss'
-import { reactData } from '../../../data/reactData'
-import { userDataQuestions } from '../../../utils/userDataQuestions'
+import LayoutQuiz from '../../../LayoutQuiz'
+import '../styles.scss'
+import { reactData } from '../../../../data/reactData'
+import { userDataQuestions } from '../../../../utils/userDataQuestions'
 
 const QuizReact = () => {
 
@@ -12,13 +12,14 @@ const QuizReact = () => {
   return (
     <LayoutQuiz>
       <main className="container-quiz">
-        <h2 className='title-quiz'>Quiz sobre React</h2>
+        <h2 className='title-quiz'>React</h2>
         <span className='question-current'>{indexCurrent + 1} de {qtdQuestions}</span>
         <p className='question'>{questionCurrent.pergunta}</p>
 
         <div className='wrap-alternative'>
           {questionCurrent.alternativas.map((alternativa,index)=>(
             <p 
+            id={index.toString()}
             className={correctAlternative == index ? 'alternative correct' : 'alternative'} 
             key={index}
             onClick={()=> verifyAlternative(index)}
