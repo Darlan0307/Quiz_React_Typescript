@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+![Logo do projeto](/src/assets/capaquiz.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Quiz sobre programação
 
-Currently, two official plugins are available:
+Nesse projeto foram desenvolvidos alguns quizzes de programação, onde o usuário poderá escolher uma tecnologia e testar os seus conhecimento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Introdução
 
-## Expanding the ESLint configuration
+Objetivo desse projeto é estimular o estudo e a prática na programação.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔨 Guia de instalação
 
-- Configure the top-level `parserOptions` property like this:
+Você pode acessar o site pelo link na descrição, caso queira fazer um clone do github será necessário seguir essas etapas:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+No terminal do seu VSCode:
+
+Passo 1:
+```
+git clone <url_desse_repositório>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Passo 2:
+```
+cd <nome_da_pasta_criada>
+```
+
+Passo 3:
+```
+npm i ou yarn
+```
+
+Passo 4:
+```
+npm run dev ou yarn dev
+```
+
+
+## 📦 Tecnologias usadas:
+
+* ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react)
+* ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+* ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
+
+## 💡 SOCIAL
+* [Meu linkedin](https://www.linkedin.com/in/darlan-martins-8a7956259/)
