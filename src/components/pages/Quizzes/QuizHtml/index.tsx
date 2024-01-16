@@ -35,7 +35,7 @@ const QuizHtml = () => {
         {indexCurrent + 1 == qtdQuestions ? (
           <button 
           className='btn-next-question'
-          onClick={concludeQuiz}
+          onClick={()=>concludeQuiz("HTML")}
           >Concluir</button>
         ):(
           <button 

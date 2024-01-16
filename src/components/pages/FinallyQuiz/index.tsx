@@ -4,7 +4,7 @@ import { useQuiz } from '../../../context/QuizContext'
 import './styles.scss'
 const FinallyQuiz = () => {
 
-  const {qtdHits,qtdQuestions,setQtdHits,setQtdQuestions} = useQuiz()
+  const {qtdHits,qtdQuestions,setQtdHits,setQtdQuestions,setSkill,skill} = useQuiz()
 
   return (
     <main className='page-final'>
@@ -15,7 +15,8 @@ const FinallyQuiz = () => {
         {qtdHits}
         <span>de</span> <br />
         {qtdQuestions}
-        <span>perguntas.</span>
+        <span>perguntas sobre</span> <br />
+        <strong>{skill}</strong>.
       </p>
       <img src={img} alt="Imagem de final do jogo" />
       <Link 
@@ -24,6 +25,7 @@ const FinallyQuiz = () => {
       onClick={()=>{
         setQtdHits(0)
         setQtdQuestions(0)
+        setSkill('')
       }}
       >Reiniciar</Link>
     </main>

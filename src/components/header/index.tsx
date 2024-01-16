@@ -5,11 +5,12 @@ import { useQuiz } from '../../context/QuizContext'
 
 const Header = () => {
 
-  const {setQtdHits,setQtdQuestions} = useQuiz()
+  const {setQtdHits,setQtdQuestions,setSkill} = useQuiz()
 
   const handleClick = () => {
     setQtdHits(0)
     setQtdQuestions(0)
+    setSkill('')
   }
 
   return (

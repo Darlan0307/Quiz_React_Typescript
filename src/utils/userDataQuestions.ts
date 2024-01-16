@@ -9,7 +9,7 @@ export const userDataQuestions = (data:objQuestions[]) => {
   const [indexCurrent,setIndexCurrent] = useState(0)
   const [correctAlternative,setCorrectAlternative] = useState<number | null>(null)
   const [isQuestionVerify,setIsQuestionVerify] = useState(false)
-  const {qtdHits,setQtdHits,setQtdQuestions} = useQuiz()
+  const {qtdHits,setQtdHits,setQtdQuestions,setSkill} = useQuiz()
 
   const navigate = useNavigate()
 
@@ -26,12 +26,13 @@ export const userDataQuestions = (data:objQuestions[]) => {
     }
   }
 
-  const concludeQuiz = () => {
+  const concludeQuiz = (skill:string) => {
     if(isQuestionVerify){
       setCorrectAlternative(null)
       setIsQuestionVerify(false)
       window.scrollTo(0,0)
       setQtdQuestions(data.length)
+      setSkill(skill)
       navigate("/congratulations")
     }else{
       toast.warn('Escolha uma alternativa.')
