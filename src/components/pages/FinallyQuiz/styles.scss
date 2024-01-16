@@ -32,6 +32,10 @@
     border-radius: 15px;
     cursor: pointer;
     text-decoration: none;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0 0 15px 0 #a84ae6;
+    }
   }
 
   img{

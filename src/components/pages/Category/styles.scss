@@ -41,9 +41,13 @@
       align-items: center;
       gap: .5em;
       justify-content: center;
+      transition: all .3s;
 
       svg{
         font-size: 30px;
+      }
+      &:hover{
+        box-shadow: 0 0 15px 0 #a84ae6;
       }
     }
   }

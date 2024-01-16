@@ -2,12 +2,31 @@ import { Link } from "react-router-dom"
 import img from '../../../assets/category.svg'
 import './styles.scss'
 import {FaReact,FaNodeJs,FaHtml5,FaCss3} from 'react-icons/fa'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { useRef } from 'react';
 
 const Category = () => {
 
+  const container = useRef<HTMLDivElement>(null)
+
+  useGSAP(() => {
+    // Estilo inicial
+    gsap.fromTo(container.current, {
+      opacity: 0,
+      y:300,
+    },{ // Estilo final
+      opacity:1,
+      y:0,
+      ease: "back.inOut",
+      duration: 1
+    });
+  
+  }, { scope: container });
+
 
   return (
-    <main className="page-category">
+    <main className="page-category" ref={container}>
       <h2>Escolha uma categoria</h2>
       <p>As perguntas serão referentes a uma dessas tecnologias</p>
       <div className="categories">
